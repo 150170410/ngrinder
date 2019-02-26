@@ -5,7 +5,7 @@ import VueMoment from 'vue-moment';
 import moment from 'moment';
 import axios from 'axios';
 
-//import Login from 'Login.vue';
+import Login from 'Login.vue';
 
 axios.interceptors.request.use(config => {
     if (typeof config.params === 'undefined') {
@@ -38,7 +38,7 @@ Vue.directive('focus', {
 const store = require('./store/vuex-store').default;
 
 const routes = [
-    //{path: '/login', component: Login, name: 'login'},
+    {path: '/login', component: Login, name: 'login'},
 ];
 
 const router = new VueRouter({
